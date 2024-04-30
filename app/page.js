@@ -2,6 +2,11 @@ import Header from "@/components/Header";
 import Particles from "./particles";
 import NFTInfo from "@/components/NFT-Info";
 import NFTCollections from "@/components/NFTCollections";
+import BuyNft from "@/components/BuyNft";
+import Roadmap from "@/components/Roadmap";
+import Partners from "@/components/Partners";
+import Merchandise from "@/components/Merchandise";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -12,6 +17,11 @@ export default function Home() {
       <Header />
       <NFTInfo />
       <NFTCollections />
+      <BuyNft />
+      <Roadmap />
+      <Partners />
+      <Merchandise />
+      {/* <Team/> */}
     </div>
   );
 }

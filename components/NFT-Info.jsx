@@ -25,7 +25,7 @@ const NFTInfo = () => {
           Use Your NFTs As An <br /> AlternateAsset Class
         </h2>
 
-        <p className="w-[450px] xl:w-[574px] text-center lg:text-left">
+        <p className="w-[95%] sm:w-[450px] xl:w-[574px] text-center lg:text-left">
           Welcome to Iceblox: Where Innovation Meets Community in the Coolest
           Corner of the Web. Dive in and Discover a New Era of Social Media
         </p>

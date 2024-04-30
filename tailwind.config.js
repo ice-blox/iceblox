@@ -54,7 +54,7 @@ module.exports = {
       colors: {
         blue: "#0094FF",
         "light-green": "#D2FF00",
-        "mid-green": "#D2FF00",
+        "mid-green": "#049D94",
         grey: "#D1D1D1",
         customGradient:
           "linear-gradient(94.45deg, #608BE5 22.24%, #009BDD 58.75%, #1103B0 97.27%)",

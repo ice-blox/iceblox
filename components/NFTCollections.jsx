@@ -25,7 +25,7 @@ const NFTCollections = () => {
     { image: hurricaneHail, title: "hurricane hail", id: "#12345" },
   ];
   return (
-    <section className=" min-h-screen flex flex-col justify-center items-center space-y-2">
+    <section className=" min-h-fit flex flex-col items-center space-y-2">
       <h4 className=" pt-[150px] lg:pt-0 uppercase blue-sub-head-600 text-h4 text-center">
         collection
       </h4>
