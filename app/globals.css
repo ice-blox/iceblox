@@ -95,11 +95,11 @@ body {
   }
 
   .blue-sub-head-800 {
-    @apply text-h2 text-blue font-lato font-extrabold text-center
+    @apply text-[30px] text-blue font-lato font-bold text-center
   }
 
   .white-sub-head-800 {
-    @apply text-[35px] sm:text-[42px] text-white font-lato font-bold text-center
+    @apply text-[30px] text-white font-lato font-bold text-center
   }
 
 }

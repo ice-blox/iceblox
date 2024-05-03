@@ -41,7 +41,7 @@ export default Merchandise;
 
 const MerchandiseCard = ({ image, item, id }) => {
   return (
-    <div className="w-[70%] sm:w-fit flex flex-col h-[350px] items-center bg-[#212027] rounded-md py-4 px-5">
+    <div className="w-[70%] sm:w-fit flex flex-col h-[350px] items-center bg-matte-black rounded-md py-4 px-5">
       <Image src={image} alt="merchandise" />
       <h4 className="uppercase blue-sub-head-600 text-h4 text-center mt-2">
         {item}

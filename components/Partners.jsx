@@ -10,18 +10,16 @@ import spatial from "@/public/assets/partners/spatial.svg";
 const Partners = () => {
   const partners = [sandbox, decentraland, pixels, matrix, spatial];
   return (
-    <div className="w-full items-center my-[100px] flex justify-center">
-      <div className="w-[90%]">
-        <Marquee
-          className="flex items-center bg-[#212027] w-[90%] py-10 rounded-lg"
-          gradientColor="#212027"
-          gradientWidth="20px"
-        >
-          {partners.map((item) => (
-            <Image className="ml-[100px]" key={item} src={item} alt={item} />
-          ))}
-        </Marquee>
-      </div>
+    <div className="w-[90%] max-w-[1700px] my-[100px] mx-auto">
+      <Marquee
+        className="flex items-center bg-matte-black w-[90%] py-10 rounded-lg"
+        gradientColor="#212027"
+        gradientWidth="20px"
+      >
+        {partners.map((item, i) => (
+          <Image className="ml-[100px]" key={i} src={item} alt={item} />
+        ))}
+      </Marquee>
     </div>
   );
 };

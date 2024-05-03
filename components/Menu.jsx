@@ -25,9 +25,9 @@ export function MenuSheet() {
             <h2 onClick={() => Router.push("/nft")}>NFT</h2>
             <h2 onClick={() => Router.push("/")}>page</h2>
             <h2 onClick={() => Router.push("/contact")}>contact</h2>
-            <button className="flex bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
+            <button className="flex font-lato items-center font-semibold bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
               Join Discord
-              <Image className="bg-none" src={discord} alt="discord" />
+              <Image className="bg-none w-[25px]" src={discord} alt="discord" />
             </button>
           </div>
         </SheetClose>

@@ -1,3 +1,9 @@
+import soldier from "@/public/assets/soldier.svg";
+import facebook from "@/public/assets/facebook.jpg";
+import twitter from "@/public/assets/twitter.png";
+import pinterest from "@/public/assets/pinterest.png";
+import Image from "next/image";
+
 const Team = () => {
   return (
     <section className="min-h-fit py-[150px] flex flex-col items-center space-y-2">
@@ -11,23 +17,36 @@ const Team = () => {
         Discover the Iceblox Team: A Diverse Group of Innovators, Creators, and
         Cool Crusaders Leading the Charge in Redefining Social Media
       </p>
-      <TeamCard />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 px-5">
+        {Array.from({ length: 6 }).map((item, i) => (
+          <TeamCard
+            key={i}
+            description="Fostering connections and inclusivity, Dr. Arctic makes Iceblox feel
+        like home for every user."
+            name="Dr. Arctic Avalanche Head of Community"
+          />
+        ))}
+      </div>
     </section>
   );
 };
 
 export default Team;
 
-const TeamCard = () => {
+const TeamCard = ({ image, name, description, socials }) => {
   return (
-    <div className="bg-mid-green">
-      <h4>Dr. Arctic Avalanche Head of Community</h4>
-      <p>
-        Fostering connections and inclusivity, Dr. Arctic makes Iceblox feel
-        like home for every user.
-      </p>
-      <div>
-            
+    <div className="bg-mid-green max-w-[350px] lg:w-full rounded-xl p-[30px] space-y-4">
+      <div className="flex items-center justify-between">
+        <Image src={soldier} alt="nft" />
+        <h4 className="text-left font-inter font-semibold text-[15px]">
+          {name}
+        </h4>
+      </div>
+      <p>{description}</p>
+      <div className="justify-center items-center flex gap-4">
+        <Image src={pinterest} alt="pinterest" />
+        <Image src={twitter} alt="twitter" />
+        <Image className="mix-blend-color-burn" src={facebook} alt="facebook" />
       </div>
     </div>
   );

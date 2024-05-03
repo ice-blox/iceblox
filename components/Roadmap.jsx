@@ -49,7 +49,7 @@ export default Roadmap;
 
 const RoadmapCard = ({ phase, title, listData, number }) => {
   return (
-    <div className="bg-[#212027] container w-[90%] lg:w-[75%] px-[20px] lg:px-[100px] rounded-xl py-[25px] lg:py-[50px]">
+    <div className="mx-auto bg-matte-black w-[90%] max-w-[1400px] p-0 px-[20px] lg:px-[100px] rounded-xl py-[25px] lg:py-[50px]">
       <h1 className="text-stroke font-lato font-bold text-left text-h1 text-transparent">
         {number}
       </h1>

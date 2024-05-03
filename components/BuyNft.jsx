@@ -5,7 +5,7 @@ import { MoveRight } from "lucide-react";
 const BuyNft = () => {
   return (
     <div className="flex justify-center items-center h-fit my-[100px]">
-      <div className="container w-[90%] md:w-[80%] gap-y-8 grid grid-cols-1 lg:grid-cols-2 bg-[#212027] px-[30px] md:px-[50px] py-[30px] rounded-md">
+      <div className="container w-[90%] lg:w-[80%] max-w-[1400px] gap-y-8 grid grid-cols-1 md:grid-cols-2 bg-matte-black px-[30px] md:px-[50px] py-[30px] rounded-md">
         <BuyCard
           title="Buy IBX"
           description="Join the Cool Crowd! Get Your IBX Coin Today and Dive into the Iceblox

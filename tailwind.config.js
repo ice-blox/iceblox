@@ -13,6 +13,7 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
+        base: "500px",
         "2xl": "1400px",
       },
     },
@@ -56,6 +57,7 @@ module.exports = {
         "light-green": "#D2FF00",
         "mid-green": "#049D94",
         grey: "#D1D1D1",
+        "matte-black": "#212027",
         customGradient:
           "linear-gradient(94.45deg, #608BE5 22.24%, #009BDD 58.75%, #1103B0 97.27%)",
         primary: {

@@ -7,6 +7,10 @@ import Roadmap from "@/components/Roadmap";
 import Partners from "@/components/Partners";
 import Merchandise from "@/components/Merchandise";
 import Team from "@/components/Team";
+import FAQ from "@/components/FAQ";
+import BlogsNews from "@/components/Blogs-News";
+import ContactUs from "@/components/ContactUs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +25,11 @@ export default function Home() {
       <Roadmap />
       <Partners />
       <Merchandise />
-      {/* <Team/> */}
+      <Team />
+      <FAQ />
+      <BlogsNews />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
