@@ -127,7 +127,7 @@ const ContactUs = () => {
         <Button className="text-black font-poppins font-semibold bg-custom-gradient uppercase w-full">
           Send mail{" "}
           <span className="ml-2">
-            <MailIcon color="#000" />
+            <MailIcon size={20} color="#000" />
           </span>
         </Button>
       </div>

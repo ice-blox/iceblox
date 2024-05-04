@@ -23,7 +23,7 @@ const Navbar = () => {
         <h2 onClick={() => Router.push("/contact")}>contact</h2>
       </div>
       <MenuSheet />
-      <Button className="hidden lg:flex bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
+      <Button className="hidden font-semibold lg:flex bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
         Join Discord
         <Image className="bg-none" src={discord} alt="discord" />
       </Button>

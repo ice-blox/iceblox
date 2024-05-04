@@ -120,10 +120,10 @@ export default function ParticlesComponent(props) {
           value: 0.8,
         },
         shape: {
-          type: "circle",
+          type: "square",
         },
         size: {
-          value: { min: 1, max: 8 },
+          value: { min: 1, max: 10 },
           random: true,
           animation: {
             count: 0,
