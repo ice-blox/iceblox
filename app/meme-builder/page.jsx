@@ -3,10 +3,7 @@ import MemeTemplate from "./memeTemplate";
 
 const page = () => {
   return (
-    <section className="pt-[200px] w-full ">
-      <h1 className="text-center font-extrabold font-inter text-[60px]">
-        Meme Builder
-      </h1>
+    <section className="w-full ">
       <MemeTemplate />
     </section>
   );

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image"; // Assuming you are using Next.js
 import cube from "@/public/assets/cube.svg";
+import { cn } from "@/lib/utils";
 
 const Cube = ({ x, y, size, position }) => (
   <motion.div
@@ -13,7 +14,7 @@ const Cube = ({ x, y, size, position }) => (
     }}
     transition={{ type: "inertia", delay: 1, duration: 0.8 }}
   >
-    <Image src={cube} className={`w-[${size}]`} alt="cube" />
+    <Image src={cube} style={{ width: size }} alt="cube" />
   </motion.div>
 );
 

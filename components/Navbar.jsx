@@ -19,11 +19,11 @@ const Navbar = () => {
         <h2 onClick={() => Router.push("/about")}>About</h2>
         <h2 onClick={() => Router.push("/roadmap")}>Roadmap</h2>
         <h2 onClick={() => Router.push("/nft")}>NFT</h2>
-        <h2 onClick={() => Router.push("/")}>page</h2>
+        <h2 onClick={() => Router.push("/meme-builder")}>Meme Builder</h2>
         <h2 onClick={() => Router.push("/contact")}>contact</h2>
       </div>
       <MenuSheet />
-      <Button className="hidden font-semibold lg:flex bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
+      <Button className="hidden font-semibold w-fit lg:flex bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
         Join Discord
         <Image className="bg-none" src={discord} alt="discord" />
       </Button>
