@@ -1,6 +1,6 @@
 "use client";
 
-// import { Carousel, CarouselContent } from "@/components/ui/carousel";
+// import { Carousel, CarouselContent } from "../../components/ui/carousel";
 import Image from "next/image";
 import {
   Carousel,
