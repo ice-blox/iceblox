@@ -3,14 +3,14 @@ import Navbar from "../../components/Navbar";
 import NFTCarousel from "../../components/nft-carousel";
 import React from "react";
 
-const page = () => {
-  return (
-    <div>
-      <Navbar />
+const page = () => (
+  <div>
+    <Navbar />
+    <main className="space-y-14 pb-3">
       <NFTCarousel />
-      {/* <NftCollectionsTable /> */}
-    </div>
-  );
-};
+      <NftCollectionsTable />
+    </main>
+  </div>
+);
 
 export default page;
