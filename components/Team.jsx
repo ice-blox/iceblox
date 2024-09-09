@@ -1,7 +1,7 @@
-import soldier from "@/public/assets/soldier.svg";
-import facebook from "@/public/assets/facebook.jpg";
-import twitter from "@/public/assets/twitter.png";
-import pinterest from "@/public/assets/pinterest.png";
+import soldier from "../public/assets/soldier.svg";
+import facebook from "../public/assets/facebook.jpg";
+import twitter from "../public/assets/twitter.png";
+import pinterest from "../public/assets/pinterest.png";
 import Image from "next/image";
 
 const Team = () => {

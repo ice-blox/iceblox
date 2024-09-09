@@ -1,9 +1,9 @@
 import React from "react";
-import tees1 from "@/public/assets/merchandise/tees1.svg";
-import tees2 from "@/public/assets/merchandise/tees2.svg";
-import tees3 from "@/public/assets/merchandise/tees3.svg";
-import tees4 from "@/public/assets/merchandise/tees4.svg";
-import tees5 from "@/public/assets/merchandise/tees5.svg";
+import tees1 from "../public/assets/merchandise/tees1.svg";
+import tees2 from "../public/assets/merchandise/tees2.svg";
+import tees3 from "../public/assets/merchandise/tees3.svg";
+import tees4 from "../public/assets/merchandise/tees4.svg";
+import tees5 from "../public/assets/merchandise/tees5.svg";
 import Image from "next/image";
 import { Button } from "./ui/button";
 const Merchandise = () => {

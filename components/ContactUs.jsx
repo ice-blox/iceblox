@@ -3,10 +3,10 @@
 import { MailIcon, MailPlus, MapPinIcon, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import alien1 from "@/public/assets/alien1.svg";
-import alien2 from "@/public/assets/alien2.svg";
-import alien3 from "@/public/assets/alien3.svg";
-import alien4 from "@/public/assets/alien4.svg";
+import alien1 from "../public/assets/alien1.svg";
+import alien2 from "../public/assets/alien2.svg";
+import alien3 from "../public/assets/alien3.svg";
+import alien4 from "../public/assets/alien4.svg";
 import { useRouter } from "next/navigation";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -107,21 +107,21 @@ const ContactUs = () => {
           sagittis, posuere nibh non, pellentesque mauris.
         </p>
         <Input
-          className="border-2 placeholder:text-white placeholder:font-medium px-7"
+          className="bg-matte-black border-2 placeholder:text-white placeholder:font-medium px-7"
           placeholder="Your Name"
         />
         <div className="flex justify-between items-center gap-6">
           <Input
-            className="border-2 placeholder:text-white placeholder:font-medium px-7"
+            className="bg-matte-black border-2 placeholder:text-white placeholder:font-medium px-7"
             placeholder="Email"
           />
           <Input
-            className="border-2 placeholder:text-white placeholder:font-medium px-7"
+            className="bg-matte-black border-2 placeholder:text-white placeholder:font-medium px-7"
             placeholder="Telephone"
           />
         </div>
         <Textarea
-          className="border-2 placeholder:text-white placeholder:font-medium px-7"
+          className="bg-matte-black border-2 placeholder:text-white placeholder:font-medium px-7"
           placeholder="Message"
         />
         <Button className="text-black font-poppins font-semibold bg-custom-gradient uppercase w-full">

@@ -1,16 +1,13 @@
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+"use client";
+
 import { Menu } from "lucide-react";
 import Image from "next/image";
-import discord from "@/public/assets/discord.svg";
-import { useRouter } from "next-nprogress-bar";
+// import discord from "../public/assets/discord.svg";
+import Link from "next/link";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import PhantomWalletConnect from "./PhantomConnect";
 
 export function MenuSheet() {
-  const Router = useRouter();
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -19,16 +16,13 @@ export function MenuSheet() {
       <SheetContent className="bg-black border-none">
         <SheetClose asChild>
           <div className="flex flex-col h-screen items-center justify-center gap-[40px] text-white uppercase text-sm">
-            <h2 onClick={() => Router.push("/")}>Homepage</h2>
-            <h2 onClick={() => Router.push("/about")}>About</h2>
-            <h2 onClick={() => Router.push("/roadmap")}>Roadmap</h2>
-            <h2 onClick={() => Router.push("/nft")}>NFT</h2>
-            <h2 onClick={() => Router.push("/")}>page</h2>
-            <h2 onClick={() => Router.push("/contact")}>contact</h2>
-            <button className="flex font-lato items-center font-semibold bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl">
-              Join Discord
-              <Image className="bg-none w-[25px]" src={discord} alt="discord" />
-            </button>
+            <Link href="/">Homepage</Link>
+            <Link href="/">About</Link>
+            <Link href="/">Roadmap</Link>
+            <Link href="/">NFT</Link>
+            <Link href="/">page</Link>
+            <Link href="/">contact</Link>
+            <PhantomWalletConnect hide={false} />
           </div>
         </SheetClose>
       </SheetContent>

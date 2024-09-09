@@ -1,4 +1,4 @@
-import { phase1, phase2, phase3, phase4 } from "@/phase";
+import { phase1, phase2, phase3, phase4 } from "../phase";
 import React from "react";
 
 const Roadmap = () => {

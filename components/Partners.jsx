@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
-import sandbox from "@/public/assets/partners/sandbox.svg";
-import decentraland from "@/public/assets/partners/decentraland.svg";
-import pixels from "@/public/assets/partners/pixels.svg";
-import matrix from "@/public/assets/partners/matrix.svg";
-import spatial from "@/public/assets/partners/spatial.svg";
+import sandbox from "../public/assets/partners/sandbox.svg";
+import decentraland from "../public/assets/partners/decentraland.svg";
+import pixels from "../public/assets/partners/pixels.svg";
+import matrix from "../public/assets/partners/matrix.svg";
+import spatial from "../public/assets/partners/spatial.svg";
 
 const Partners = () => {
   const partners = [sandbox, decentraland, pixels, matrix, spatial];

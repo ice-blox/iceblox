@@ -1,9 +1,9 @@
 import React from "react";
-import Art from "@/public/assets/nft-art.svg";
-import discord from "@/public/assets/discord.svg";
-import twitch from "@/public/assets/twitch.svg";
-import facebook from "@/public/assets/facebook.svg";
-import instagram from "@/public/assets/instagram.svg";
+import Art from "../public/assets/nft-art.svg";
+import discord from "../public/assets/discord.svg";
+import twitch from "../public/assets/twitch.svg";
+import facebook from "../public/assets/facebook.svg";
+import instagram from "../public/assets/instagram.svg";
 import Image from "next/image";
 const NFTInfo = () => {
   const socials = [discord, twitch, facebook, instagram];

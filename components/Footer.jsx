@@ -1,8 +1,8 @@
 import React from "react";
-import discord from "@/public/assets/discord.svg";
-import twitch from "@/public/assets/twitch.svg";
-import facebook from "@/public/assets/facebook.svg";
-import instagram from "@/public/assets/instagram.svg";
+import discord from "../public/assets/discord.svg";
+import twitch from "../public/assets/twitch.svg";
+import facebook from "../public/assets/facebook.svg";
+import instagram from "../public/assets/instagram.svg";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -35,7 +35,7 @@ const Footer = () => {
         </p>
         <form className="flex flex-col sm:flex-row w-5/6 lg:w-2/5 lg:min-w-[800px] gap-4">
           <Input
-            className="border placeholder:text-white placeholder:font-medium px-3"
+            className="bg-matte-black border placeholder:text-white placeholder:font-medium px-3"
             placeholder="Email"
           />
           <Button className="bg-custom-gradient text-black font-inter font-bold">

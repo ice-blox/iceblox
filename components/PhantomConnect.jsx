@@ -1,15 +1,22 @@
+"use client";
 import { useState } from "react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "./ui/tooltip";
 import { Copy } from "lucide-react";
+import { useRouter } from "next-nprogress-bar";
+import { Button } from "./ui/button";
+import useAuthStore from "../app/store/auth-store";
+import { cn } from "../lib/utils";
 
-export default function PhantomWalletConnect() {
+export default function PhantomWalletConnect({ hide }) {
   const [walletAddress, setWalletAddress] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const { user } = useAuthStore((state) => state);
+  const router = useRouter();
 
   const connectWallet = async () => {
     setIsLoading(true);
@@ -66,8 +73,16 @@ export default function PhantomWalletConnect() {
   const buttonClass =
     "font-semibold w-fit lg:flex bg-custom-gradient gap-3 px-[16px] py-[10px] rounded-xl";
 
+  if (!user) {
+    return (
+      <Button onClick={() => router.push("/login")} className={buttonClass}>
+        Login
+      </Button>
+    );
+  }
+
   return (
-    <div>
+    <div className={cn("block", hide && "hidden lg:block")}>
       <TooltipProvider delayDuration={0}>
         <Tooltip>
           <TooltipTrigger>
@@ -76,13 +91,13 @@ export default function PhantomWalletConnect() {
                 Connecting...
               </button>
             ) : walletAddress ? (
-              <button className={buttonClass} onClick={handleDisconnect}>
+              <Button className={buttonClass} onClick={handleDisconnect}>
                 Disconnect Wallet
-              </button>
+              </Button>
             ) : (
-              <button className={buttonClass} onClick={connectWallet}>
+              <Button className={buttonClass} onClick={connectWallet}>
                 Connect Wallet
-              </button>
+              </Button>
             )}
           </TooltipTrigger>
 

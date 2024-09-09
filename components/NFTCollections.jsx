@@ -1,15 +1,15 @@
 import React from "react";
 import NFTCard from "./NFTCard";
-import flame from "@/public/assets/nft/aquaflame.svg";
-import eathKeeper from "@/public/assets/nft/eathKeeper.svg";
-import cosmoFrost from "@/public/assets/nft/cosmoFrost.svg";
-import chillberg from "@/public/assets/nft/chillberg.svg";
-import seaFrost from "@/public/assets/nft/seaFrost.svg";
-import milkyway from "@/public/assets/nft/milkyway.svg";
-import glacierStorm from "@/public/assets/nft/glacierStorm.svg";
-import frostBite from "@/public/assets/nft/frostBite.svg";
-import aquabloom from "@/public/assets/nft/aquabloom.svg";
-import hurricaneHail from "@/public/assets/nft/hurricaneHail.svg";
+import flame from "../public/assets/nft/aquaflame.svg";
+import eathKeeper from "../public/assets/nft/eathKeeper.svg";
+import cosmoFrost from "../public/assets/nft/cosmoFrost.svg";
+import chillberg from "../public/assets/nft/chillberg.svg";
+import seaFrost from "../public/assets/nft/seaFrost.svg";
+import milkyway from "../public/assets/nft/milkyway.svg";
+import glacierStorm from "../public/assets/nft/glacierStorm.svg";
+import frostBite from "../public/assets/nft/frostBite.svg";
+import aquabloom from "../public/assets/nft/aquabloom.svg";
+import hurricaneHail from "../public/assets/nft/hurricaneHail.svg";
 
 const NFTCollections = () => {
   const nft = [
