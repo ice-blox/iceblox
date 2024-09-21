@@ -1,3 +1,4 @@
+"use client";
 import Header from "../components/Header";
 import Particles from "./particles";
 import NFTInfo from "../components/NFT-Info";
