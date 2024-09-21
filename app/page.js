@@ -12,7 +12,7 @@ import BlogsNews from "../components/Blogs-News";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-
+import { useState } from "react";
 export default function Home() {
   return (
     <div className="w-full text-red-600 relative">
