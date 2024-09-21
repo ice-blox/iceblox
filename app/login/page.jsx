@@ -181,6 +181,7 @@ export default function AuthTabs() {
                   <Label htmlFor="signup-password">Password</Label>
                   <Input
                     id="signup-password"
+                    autoComplete="new-password"
                     type="password"
                     className="bg-transparent"
                     value={signupPassword}
@@ -211,6 +212,7 @@ export default function AuthTabs() {
                   <Input
                     id="confirm-password"
                     type="password"
+                    autoComplete="new-password"
                     value={confirmPassword}
                     onChange={handleConfirmPasswordChange}
                     className={`bg-transparent ${

@@ -2,7 +2,7 @@
 
 import { MailIcon, MailPlus, MapPinIcon, Phone } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { useTransition } from "react";
 import alien1 from "../public/assets/alien1.svg";
 import alien2 from "../public/assets/alien2.svg";
 import alien3 from "../public/assets/alien3.svg";
@@ -14,6 +14,8 @@ import { Button } from "./ui/button";
 
 const ContactUs = () => {
   const router = useRouter();
+  const [name, setName] = useState("");
+
   let contactOptions = [
     {
       eventFor: "Mail",
@@ -97,7 +99,10 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="w-full lg:max-w-[650px] flex flex-col justify-between  space-y-6">
+      <form
+        onSubmit={(e) => e.preventDefault()}
+        className="w-full lg:max-w-[650px] flex flex-col justify-between  space-y-6"
+      >
         <p className="text-[18px] tracking-wide md:text-sm font-extralight text-left opacity-80 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in arcu
           sagittis, posuere nibh non, pellentesque mauris.
@@ -124,13 +129,16 @@ const ContactUs = () => {
           className="bg-matte-black border-2 placeholder:text-white placeholder:font-medium px-7"
           placeholder="Message"
         />
-        <Button className="text-black font-poppins font-semibold bg-custom-gradient uppercase w-full">
+        <Button
+          onClick={SendMail}
+          className="text-black font-poppins font-semibold bg-custom-gradient uppercase w-full"
+        >
           Send mail{" "}
           <span className="ml-2">
             <MailIcon size={20} color="#000" />
           </span>
         </Button>
-      </div>
+      </form>
     </section>
   );
 };
